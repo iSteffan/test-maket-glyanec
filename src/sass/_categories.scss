@@ -3,7 +3,7 @@
   padding-bottom: 15px;
 }
 
-.section-category__wrapper {
+.section-category .container {
   display: flex;
   justify-content: space-between;
 }
@@ -93,18 +93,3 @@
 .logo-icon {
   margin-right: 15px;
 }
-
-// ---------------------------------------------------Slider---------------------------------------------------
-// .section-category__slider-wrapper {
-//   height: 785px;
-
-//   background-image: url(../images/section-category__img.jpg);
-//   background-size: cover;
-
-//   @media (min-device-pixel-ratio: 2),
-//     (-webkit-min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: url(../images/section-category__img@2x.jpg);
-//   }
-// }
