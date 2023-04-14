@@ -1,0 +1,52 @@
+body {
+  font-family: 'Proxima Nova', sans-serif;
+  // font-size: $baseFontSize;
+  color: #1e2e36;
+  background-color: #ffffff;
+}
+
+.container {
+  // outline: 1px solid tomato;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 51px;
+  padding-right: 51px;
+
+  width: 1920px;
+  //   @media screen and (min-width: 375px) and (max-width: 1575px) {
+  //   }
+
+  //   @include desktop {
+  //     width: 1576px;
+  //   }
+}
+
+// ----------------------------------------------Reset----------------------------------------------
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  //   display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
