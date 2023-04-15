@@ -1,0 +1,92 @@
+.section-consultation {
+  margin-bottom: 109px;
+}
+
+.consultation__wrapper {
+  height: 675px;
+  width: 1920px;
+
+  background-image: url(../images/consultation.jpg);
+  background-size: cover;
+  background-position: left;
+  background-size: 1561px;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/consultation@2x.jpg);
+  }
+}
+
+.form-container {
+  margin-left: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 51px;
+
+  width: 513px;
+  background-color: #fff;
+
+  transform: translateY(25%);
+}
+
+.form-title {
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 125%;
+}
+
+.submit-btn {
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #44c697;
+  border: 0;
+  cursor: pointer;
+}
+
+.consultation_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-text {
+  margin-top: 30px;
+
+  width: 395px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+}
+
+.form-input {
+  padding: 14px 15px;
+
+  height: 51px;
+  border: 1px solid #1e2e36;
+  border-radius: 3px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 125%;
+
+    opacity: 0.6;
+  }
+
+  &--margin {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
