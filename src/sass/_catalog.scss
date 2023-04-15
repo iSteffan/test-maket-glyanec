@@ -1,3 +1,7 @@
+.section-catalog {
+  margin-bottom: 100px;
+}
+
 .catalog-list {
   display: flex;
   justify-content: center;
@@ -15,6 +19,112 @@
   text-transform: uppercase;
 }
 
+.catalog-cards-list {
+  margin-top: 84px;
+
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50;
+  column-gap: 30;
+}
+
+.catalog-cards-list__item {
+  position: relative;
+  width: calc((100% - 60px) / 3);
+  transform: translatey(0);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    transform: translatey(-25px);
+
+    .card-description {
+      background-color: #44c697;
+    }
+
+    .card-name,
+    .card-price,
+    .card-price__old-price {
+      color: #ffffff;
+    }
+  }
+}
+
+.card-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.card-price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+
+  &.card-price--discount {
+    color: #ff1b1b;
+  }
+}
+
+.card-price__old-price {
+  margin-left: 10px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+
+  color: #bcbdbb;
+}
+
+.card-description {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 15px;
+}
+
+.card-special {
+  position: absolute;
+  top: 10;
+  left: 0;
+}
+
+.card-info {
+  padding: 5px 15px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: #1e2e36;
+}
+
+.card-action {
+  display: inline-block;
+
+  margin-top: 5px;
+  padding: 5px 15px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: #ff1b1b;
+}
 //---------------------------------------------Icons---------------------------------------------
 .catalog-list__icon {
   fill: black;
