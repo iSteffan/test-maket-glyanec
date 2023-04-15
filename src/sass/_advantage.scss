@@ -3,70 +3,58 @@
   gap: 30px;
 }
 
-// .section-advantage__list-title {
-//   position: absolute;
-//   top: 272;
-//   left: 30;
+.section-title {
+  margin-bottom: 52px;
 
-//   font-weight: 700;
-//   font-size: 36px;
-//   line-height: 125%;
-//   color: #ffffff;
-// }
-
-// .project-list__thumb {
-//   position: relative;
-// }
-
-// .overlay {
-//   display: block;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-
-//   background-color: rgba(33, 150, 243, 0.9);
-//   width: 100%;
-//   height: 100%;
-
-//   transform: translatey(100%);
-
-//   transition-property: transform;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-//   .section-advantage__list-item:hover & {
-//     transform: translatey(0);
-//   }
-// }
-.project-list__thumb {
-  position: relative; /* Додаємо відносне позиціонування, щоб можна було відносно нього позиціонувати інші елементи */
-}
-
-.overlay__text {
-  display: none; /* По замовчуванню ховаємо текстовий оверлей */
-  position: absolute; /* Відносне позиціонування відносно батьківського елемента */
-  bottom: 0; /* Розташовуємо текст внизу */
-  left: 0; /* Розташовуємо текст зліва */
-  right: 0; /* Розташовуємо текст справа */
-  padding: 10px; /* Додаємо внутрішні відступи, які додадуть простору текстовому блоку */
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Додаємо фоновий колір, можна змінити на бажаний */
-  color: #fff; /* Колір тексту, можна змінити на бажаний */
-  transition: transform 0.3s ease; /* Додаємо плавний перехід при зміні значень властивостей */
-}
-
-.project-list__thumb:hover .overlay__text {
-  display: block; /* При ховері на батьківський елемент відображаємо текстовий оверлей */
-  transform: translateY(
-    0
-  ); /* Зсуваємо текстовий блок вгору на висоту, рівну висоті рівню section-advantage__list-title */
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  text-align: center;
 }
 
 .section-advantage__list-title {
-  position: relative; /* Додаємо відносне позиціонування, щоб можна було позиціонувати відносно нього інші елементи */
-  z-index: 1; /* Змінюємо z-index, щоб забезпечити відображення елементу над іншими елементами */
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 125%;
+  color: #ffffff;
+}
+
+.project-list__thumb {
+  position: relative;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  bottom: 30;
+  left: 30;
+
+  // transform: translatey(100%);
+
+  // transition-property: transform;
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .section-advantage__list-item:hover & {
+    // transform: translatey(0);
+
+    .overlay__text {
+      opacity: 1;
+      display: block;
+
+      transition-property: display;
+      transition-duration: 500ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+.overlay__text {
+  display: none;
+  margin-top: 15px;
+  opacity: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  color: #ffffff;
 }
