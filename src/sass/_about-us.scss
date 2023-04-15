@@ -1,0 +1,52 @@
+.section-about-us {
+  margin-bottom: 100px;
+}
+
+.about-us__wrapper {
+  height: 675px;
+  width: 1920px;
+
+  background-image: url(../images/about-us.jpg);
+  background-size: cover;
+  background-position: right;
+  background-size: 1407px;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/about-us@2x.jpg);
+  }
+}
+
+.about-us__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 51px;
+  padding-right: 30px;
+
+  width: 791px;
+  background-color: #ffffff;
+
+  transform: translateY(25%);
+}
+
+.about-us__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+
+  &:nth-child(2) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.about-us__text-accent {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #44c697;
+}
