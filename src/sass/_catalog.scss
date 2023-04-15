@@ -1,0 +1,30 @@
+.catalog-list {
+  display: flex;
+  justify-content: center;
+  gap: 200;
+}
+
+.catalog-list__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+//---------------------------------------------Icons---------------------------------------------
+.catalog-list__icon {
+  fill: black;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .catalog-list__item:hover &,
+  .catalog-list__item:focus & {
+    fill: #44c697;
+  }
+}
