@@ -50,4 +50,8 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 125%;
+
+  &.current {
+    border-bottom: 3px solid #44c697;
+  }
 }

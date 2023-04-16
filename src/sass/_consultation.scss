@@ -1,5 +1,9 @@
 .section-consultation {
   margin-bottom: 109px;
+
+  .container {
+    padding: 0;
+  }
 }
 
 .consultation__wrapper {
@@ -29,6 +33,7 @@
 
   width: 513px;
   background-color: #fff;
+  border-left: 15px solid #44c697;
 
   transform: translateY(25%);
 }
