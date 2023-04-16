@@ -13,17 +13,16 @@
   padding-top: 50px;
   padding-right: 56px;
 
-  width: 831px;
+  min-width: 831px;
   background: #1e2e36;
 }
 
 .logo-link--footer {
   color: #ffffff;
+  margin-bottom: 50px;
 }
 
 .logo-icon--footer {
-  margin-bottom: 50px;
-
   fill: #ffffff;
 }
 
@@ -183,11 +182,31 @@
   text-transform: uppercase;
 
   color: #ffffff;
+
+  animation-name: scale;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .footer-copyrights {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 85px;
 }
 
@@ -242,4 +261,8 @@
 .calendar-icon:hover + .contacts-schedule,
 .calendar-icon:focus + .contacts-schedule {
   color: #44c697;
+}
+
+.footer-img {
+  max-width: 1089px;
 }

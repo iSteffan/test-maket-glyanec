@@ -41,6 +41,72 @@
 
 .project-list__thumb {
   position: relative;
+  height: 100%;
+}
+
+.section-advantage__list-item {
+  width: 586px;
+  height: 350px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(30, 46, 54, 0.5),
+      rgba(30, 46, 54, 0.5)
+    ),
+    url(../images/quality.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(30, 46, 54, 0.5),
+        rgba(30, 46, 54, 0.5)
+      ),
+      url(../images/quality@2x.jpg);
+  }
+
+  &:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(30, 46, 54, 0.5),
+        rgba(30, 46, 54, 0.5)
+      ),
+      url(../images/reliability.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          0deg,
+          rgba(30, 46, 54, 0.5),
+          rgba(30, 46, 54, 0.5)
+        ),
+        url(../images/reliability@2x.jpg);
+    }
+  }
+
+  &:last-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(30, 46, 54, 0.5),
+        rgba(30, 46, 54, 0.5)
+      ),
+      url(../images/delivery.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          0deg,
+          rgba(30, 46, 54, 0.5),
+          rgba(30, 46, 54, 0.5)
+        ),
+        url(../images/delivery@2x.jpg);
+    }
+  }
 }
 
 .overlay {
@@ -67,4 +133,26 @@
     opacity: 1;
     display: block;
   }
+}
+
+.advantage__left-btn {
+  position: absolute;
+  top: 160;
+  left: 15;
+
+  border: 0;
+  background-color: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+.advantage__right-btn {
+  position: absolute;
+  top: 160;
+  right: 15;
+
+  border: 0;
+  background-color: inherit;
+  padding: 0;
+  cursor: pointer;
 }
