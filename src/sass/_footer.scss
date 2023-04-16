@@ -34,6 +34,15 @@
 
   text-transform: uppercase;
   color: #ffffff;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #44c697;
+  }
 }
 
 .footer-list__span {
@@ -49,6 +58,15 @@
   font-size: 18px;
   line-height: 125%;
   color: #ffffff;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #44c697;
+  }
 }
 
 .contacts-schedule {
@@ -57,15 +75,33 @@
   font-size: 18px;
   line-height: 125%;
   color: #ffffff;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #44c697;
+  }
 }
 
 .phone-icon--footer {
-  stroke: #44c697;
+  stroke: #ffffff;
+
+  transition-property: stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .address-list__item:hover &,
+  .address-list__item:focus & {
+    stroke: #44c697;
+  }
 }
 
 .phone-link--footer {
   font-style: normal;
-  color: #44c697;
+  color: #ffffff;
 }
 
 .address-list__item {
@@ -97,6 +133,15 @@
 
 .footer-social__icon {
   fill: #ffffff;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: #44c697;
+  }
 }
 
 .footer__flex-wrapper {
@@ -165,4 +210,36 @@
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+}
+
+.map-icon {
+  margin-right: 5px;
+  fill: #ffffff;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .contacts-map:hover &,
+  .contacts-map:focus & {
+    fill: #44c697;
+  }
+}
+
+.calendar-icon {
+  fill: #ffffff;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .address-list__item:hover &,
+  .address-list__item:focus & {
+    fill: #44c697;
+  }
+}
+
+.calendar-icon:hover + .contacts-schedule,
+.calendar-icon:focus + .contacts-schedule {
+  color: #44c697;
 }

@@ -37,11 +37,40 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 125%;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #44c697;
+  }
 }
 
 .phone-icon {
   margin-right: 5px;
   stroke: #1e2e36;
+
+  transition-property: stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .phone-link:focus &,
+  .phone-link:hover & {
+    stroke: #44c697;
+  }
+}
+
+.header-list__icon {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .header-list__item:focus &,
+  .header-list__item:hover & {
+    fill: #44c697;
+  }
 }
 
 .navigation__link {
@@ -51,7 +80,16 @@
   font-size: 18px;
   line-height: 125%;
 
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   &.current {
     border-bottom: 3px solid #44c697;
+  }
+
+  &:hover,
+  &:focus {
+    color: #44c697;
   }
 }

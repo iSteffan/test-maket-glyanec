@@ -59,10 +59,9 @@
   line-height: 125%;
   color: #ffffff;
 
-  // transition-property: display, opacity;
-  // transition-duration: 500ms, 500ms;
-  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
-  //   cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   .section-advantage__list-item:hover & {
     opacity: 1;
