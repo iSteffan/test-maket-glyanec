@@ -157,6 +157,13 @@
   color: #ffffff;
   background-color: #44c697;
   border-radius: 3px;
+
+  transition: background-color 250ms ease-out;
+
+  &:hover,
+  &:focus {
+    background-color: #00c07b;
+  }
 }
 
 .catalog-list__item {

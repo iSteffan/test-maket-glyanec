@@ -60,6 +60,13 @@
   background-color: #44c697;
   border: 0;
   cursor: pointer;
+
+  transition: background-color 250ms ease-out;
+
+  &:hover,
+  &:focus {
+    background-color: #00c07b;
+  }
 }
 
 .consultation_form {
